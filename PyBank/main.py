@@ -22,7 +22,7 @@ with open("bankdata.csv", "r") as csvfile:
       current_month = int(value)
       difference.append(current_month - previous_month) #adding the values in "difference" list
       previous_month = current_month
-    average_change= sum(difference)/len(difference)
+    average_change= difference.mean()
    
     print("Financial Analysis")
     print("---------------------------------")
